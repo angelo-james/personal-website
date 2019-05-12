@@ -30,22 +30,22 @@ div {
 
 .bgimg-2 {
   background-image: url("img/fabian-grohs-610515-unsplash.jpg");
-  min-height: 100%;
+  min-height: 50%;
 }
 
 .bgimg-3 {
   background-image: url("img/charles-1473394-unsplash.jpg");
-  min-height: 100%
+  min-height: 50%;
 }
 
 .bgimg-4 {
   background-image: url("img/cj-dayrit-1344576-unsplash.jpg");
-  min-height: 100%
+  min-height: 50%;
 }
 
 .bgimg-5 {
   background-image: url("img/fernando-hernandez-1254017-unsplash.jpg");
-  min-height: 100%
+  min-height: 50%;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
@@ -125,6 +125,20 @@ div {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.contact-content {
+  text-align: center;
+  color: white;
+}
+
+.contact-content p a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-content p a:hover {
+  color: red;
 }
 
 footer {
