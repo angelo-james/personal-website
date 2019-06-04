@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AJ ARRIOLA</title>
+  <title>AJ ARRIOLA | DEVELOPER BY DESIGN</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -13,10 +13,7 @@
 <body>
 
   <div class="header">
-    <!-- <nav class="navbar navbar-light bg-light logo">
-        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/75" alt="placeholder"></a>
-    </nav> -->
-    <!-- <div class="progress-container">
+    <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
 
@@ -41,7 +38,7 @@
             <a href="#social-links">SOCIAL LINKS</a>
           </li>
           <li class="list-group-item">
-            <a href="./img/AJ-Arriola-resume.pdf" target="_blank" download="">RESUME</a>
+            <a onclick="resumeModal('./img/AJ-full-stack-developer-resume.jpg')" id="myImg">RESUME</a>
           </li>
           <li class="list-group-item">
             <a href="mailto:angelojames.arriola@gmail.com">EMAIL</a>
@@ -61,25 +58,35 @@
         </a>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <a id="caption" href="./img/AJ-Arriola-resume.pdf" target="_blank" download="">DOWNLOAD RESUME</a>
+  </div>
 
   <div class="bgimg-1">
     <div class="caption">
       <p>AJ ARRIOLA</p>
       <span class="subtitle">DEVELOPER BY DESIGN</span>
-      <h2>🚧UNDER CONSTRUCTION🚧</h2>
-      <h3 class="container">Welcome to my site. Currently still in development but will be up soon. For now follow me on Instagram where ill be posting updates on the status of my site aswell as other posts related to Web Development. Hope you enjoy the show. See you back soon.</h3>
     </div>
   </div>
 
-  <!-- <div style="display: inline-block; margin-left: 375px; margin-right: auto;" class="container">
+  <div style="display: inline-block; margin-left: 375px; margin-right: auto;" class="container">
     <div style="float: left;" class="animation-element slide-left content">
-      <h1>
+      <h1 style="letter-spacing: 10px">
         ABOUT ME
       </h1>
-      <p> -->
+      <p>
         <!-- I was first introduced to coding when working for an e commerce company that developed theyre own website. I would observe the developers as they were coding along on their computers and all i could notice at the time was that their monitors look like someting out of the Matrix. Since then i took the time to learn HTML & CSS on my spare time, but defintely felt the need to learn more. This when I took a leap of faith to apply to Galvanize, which is a full stack web dev immersive program. This is where i was able to learn javascript and how servers and apis work. With that knowledge i am now seeking roles as a front end developer, but also ive had the pleasure to work with clients to assist them in creating their online presence wither it be for a personal blog site or import export of products for the business clients. -->
-        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, reprehenderit quos. Voluptatibus possimus accusantium voluptatem vitae expedita blanditiis temporibus tenetur natus quisquam quod, tempore, quae cumque illum aperiam vel laborum voluptatum, nam velit atque consequuntur quasi illo qui nobis asperiores! Iure in ipsum, ut labore necessitatibus cumque consequatur quod dignissimos consequuntur voluptatibus voluptatem dolor eum laborum asperiores ipsam beatae quia error deserunt placeat fugit. Minima adipisci totam vitae veritatis recusandae impedit, necessitatibus soluta repudiandae sequi eveniet nisi praesentium dolorum illum iusto cupiditate doloribus, maiores aliquam velit voluptatibus magni quae. Explicabo iusto nesciunt minus omnis ullam inventore sapiente quas asperiores impedit eius modi similique possimus cumque quae debitis ipsum error deserunt illo, consectetur nobis quo vitae rem temporibus voluptates? Placeat unde mollitia eveniet rerum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, reprehenderit quos. Voluptatibus possimus accusantium voluptatem vitae expedita blanditiis temporibus tenetur natus quisquam quod, tempore, quae cumque illum aperiam vel laborum voluptatum, nam velit atque consequuntur quasi illo qui nobis asperiores! Iure in ipsum, ut labore necessitatibus cumque consequatur quod dignissimos consequuntur voluptatibus voluptatem dolor eum laborum asperiores ipsam beatae quia error deserunt placeat fugit. Minima adipisci totam vitae veritatis recusandae impedit, necessitatibus soluta repudiandae sequi eveniet nisi praesentium dolorum illum iusto cupiditate doloribus, maiores aliquam velit voluptatibus magni quae. Explicabo iusto nesciunt minus omnis ullam inventore sapiente quas asperiores impedit eius modi similique possimus cumque quae debitis ipsum error deserunt illo, consectetur nobis quo vitae rem temporibus voluptates? Placeat unde mollitia eveniet rerum.
       </p>
     </div>
     <img style="float: right; width: 40%; border-radius: 50%" class="animation-element slide-right content" src="https://via.placeholder.com/150"" alt="placeholder">
@@ -95,13 +102,16 @@
     <h1>
       THINGS IVE WORKED ON
     </h1>
-    <p class="container">
-      Freelance developer with the goal to make your dream website a reality. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, tempora. Fuga, porro repellat minima velit ullam error in repudiandae dolorum cupiditate maxime alias quibusdam? Porro, quis laborum magnam exercitationem sequi minus dolore? Iure eligendi cum, dolorem cupiditate tenetur officia possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum minus commodi, veritatis facilis impedit libero adipisci eveniet, porro necessitatibus odio, nemo ea doloremque! Consectetur iure alias laborum asperiores. A error eum aspernatur tempore itaque, quos, explicabo vero placeat assumenda ea modi molestias in laboriosam, maiores ex. Inventore corrupti beatae voluptatum molestiae unde sint omnis distinctio provident error molestias, aut quam voluptates consectetur repellendus dolore vero qui exercitationem nulla architecto vel totam reprehenderit quos eveniet dolorum. Incidunt sapiente tempora perspiciatis harum dolor, unde quasi possimus nam ea quos expedita suscipit omnis quae ducimus at necessitatibus quod hic consequuntur ratione quas rerum.
-    </p>
-    <p class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis obcaecati odit. Quidem sit culpa mollitia totam iusto nobis, vel soluta voluptate consectetur? Accusamus, excepturi, quae, labore est animi mollitia sapiente corporis eligendi blanditiis esse ut adipisci tempore quibusdam possimus cum debitis harum voluptatum at iure. Corporis praesentium ex a officiis voluptatum molestiae minus delectus unde saepe numquam sunt omnis vitae eius quos, ea, possimus laboriosam necessitatibus tenetur ipsum provident exercitationem? Quae labore iure deserunt, cumque dolore error distinctio, natus unde quasi eaque nesciunt commodi quaerat officia quas quam! Inventore officiis dolorem perspiciatis corrupti dolorum aut magni sit a adipisci.</p>
+    <div style="display: inline-block">
+      <img src="https://via.placeholder.com/200"" alt="placeholder">
+
+      <p>
+        Runners mind
+      </p>
+    </div>
   </div>
 
-  <div class="bgimg-3">
+  <!-- <div class="bgimg-3">
     <div class="caption">
       <p>TESTIMONIALS</p>
     </div>
@@ -114,7 +124,7 @@
       Freelance developer with the goal to make your dream website a reality. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, tempora. Fuga, porro repellat minima velit ullam error in repudiandae dolorum cupiditate maxime alias quibusdam? Porro, quis laborum magnam exercitationem sequi minus dolore? Iure eligendi cum, dolorem cupiditate tenetur officia possimus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum minus commodi, veritatis facilis impedit libero adipisci eveniet, porro necessitatibus odio, nemo ea doloremque! Consectetur iure alias laborum asperiores. A error eum aspernatur tempore itaque, quos, explicabo vero placeat assumenda ea modi molestias in laboriosam, maiores ex. Inventore corrupti beatae voluptatum molestiae unde sint omnis distinctio provident error molestias, aut quam voluptates consectetur repellendus dolore vero qui exercitationem nulla architecto vel totam reprehenderit quos eveniet dolorum. Incidunt sapiente tempora perspiciatis harum dolor, unde quasi possimus nam ea quos expedita suscipit omnis quae ducimus at necessitatibus quod hic consequuntur ratione quas rerum.
     </p>
     <p class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis obcaecati odit. Quidem sit culpa mollitia totam iusto nobis, vel soluta voluptate consectetur? Accusamus, excepturi, quae, labore est animi mollitia sapiente corporis eligendi blanditiis esse ut adipisci tempore quibusdam possimus cum debitis harum voluptatum at iure. Corporis praesentium ex a officiis voluptatum molestiae minus delectus unde saepe numquam sunt omnis vitae eius quos, ea, possimus laboriosam necessitatibus tenetur ipsum provident exercitationem? Quae labore iure deserunt, cumque dolore error distinctio, natus unde quasi eaque nesciunt commodi quaerat officia quas quam! Inventore officiis dolorem perspiciatis corrupti dolorum aut magni sit a adipisci.</p>
-  </div>
+  </div> -->
 
   <div id="social-links" class="bgimg-4">
     <div class="caption">
@@ -154,12 +164,12 @@
     <div class="container border-top pt-3 pb-3">
       <p>&copy; 2019 | AJ ARRIOLA</p>
     </div>
-  </footer> -->
+  </footer>
 
 </body>
-  <!-- <script
+  <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-  <script src="js/homepage.js"></script> -->
+  <script src="js/homepage.js"></script>
 </html>
