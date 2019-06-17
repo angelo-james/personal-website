@@ -75,13 +75,13 @@ function check_if_in_view() {
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
- 
+
   $.each($animation_elements, function() {
     var $element = $(this);
     var element_height = $element.outerHeight();
     var element_top_position = $element.offset().top;
     var element_bottom_position = (element_top_position + element_height);
- 
+
     //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
@@ -112,3 +112,27 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+$(document).ready(function() {
+    
+  // Whenever the window is scrolled ... 
+  $(window).scroll( function(){
+  
+      // Check the location of the object
+      $('.fade-in').each( function(i){
+          
+          // Find the location of the objects
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          
+          // Find out how far we've scrolled down
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          // If we have scrolled past the bottom of the object,
+          // fade it in!
+          if( bottom_of_window > bottom_of_object ){
+              
+              $(this).animate({'opacity':'1'},1000);
+          }
+      }); 
+  });
+})
