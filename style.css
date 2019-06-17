@@ -31,8 +31,8 @@ div {
 
 .bgimg-1 { 
   /* The image used */
-  /* background-image: url("img/awmleer-421529-unsplash.jpg"); */
-  background-color: black;
+  background-image: url("img/awmleer-421529-unsplash.jpg");
+  /* background-color: black; */
   min-height: 100%
 }
 
@@ -89,6 +89,24 @@ div {
   text-align: center;
   padding: 50px 80px;
   text-align: justify;
+}
+
+#portfolio-content {
+  display: flex;
+  flex-direction: column;
+}
+.project-image {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-info {
+  flex: 1;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .content h1 {
@@ -490,6 +508,10 @@ footer {
   color: red;
   text-decoration: none;
   cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0;
 }
 
 /* 100% Image Width on Smaller Screens */
