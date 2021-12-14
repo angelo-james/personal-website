@@ -8,7 +8,7 @@ export default function ContainerBlock({ children, ...meta }) {
       <Head>
         <title>{meta.title}</title>
       </Head>
-      <main className="dark:bg-gray-800 w-full">
+      <main className="w-full">
         <Navbar />
         <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">{children}</div>
       </main>
