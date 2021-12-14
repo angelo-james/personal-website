@@ -1,9 +1,10 @@
 import "../styles/globals.css";
+import 'tailwindcss/tailwind.css'
 import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="light" attribute="class">
+    <ThemeProvider defaultTheme="dark" attribute="class">
       <Component {...pageProps} />
     </ThemeProvider>
   );
