@@ -2,9 +2,9 @@ const userData = {
   githubUsername: "angelo-james",
   name: "AJ Arriola",
   designation: "Full-Stack Developer",
-  avatarUrl: "/avatar.png",
+  avatarUrl: "",
   email: "angelojames.arriola@gmail.com",
-  phone: "+1 650 452 4055",
+  phone: "",
   address: "San Francisco Bay Area",
   projects: [
     {
