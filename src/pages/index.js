@@ -1,4 +1,4 @@
-import ContainerBlock from "../components/ContainerBlock/ContainerBlock";
+import ContainerBlock from "../components/ContainerBlock";
 
 export default function Home() {
   return (
