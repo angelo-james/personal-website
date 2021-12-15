@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import userData from "../constants/data";
+import userData from "../../constants/data";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
@@ -26,6 +28,20 @@ export default function Navbar() {
             </a>
           </Link>
         </div>
+
+        <div className="space-x-8 hidden md:block">
+          <Link href="/about">
+              <a
+                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                  router.asPath === "/about"
+                    ? "text-gray-600 font-bold dark:text-gray-400"
+                    : "text-gray-600 dark:text-gray-300 font-normal "
+                }`}
+              >
+                About
+              </a>
+            </Link>
+          </div>
 
         <div className="space-x-4 flex flex-row items-center">
           <a

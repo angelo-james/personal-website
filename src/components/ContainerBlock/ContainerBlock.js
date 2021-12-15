@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 
 export default function ContainerBlock({ children, ...meta }) {
   return (
