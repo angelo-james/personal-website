@@ -52,6 +52,17 @@ export default function Navbar() {
                 Projects
               </a>
             </Link>
+            <Link href="/experience">
+              <a
+                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                  router.asPath === "/experience"
+                    ? "text-gray-600 font-bold dark:text-gray-400"
+                    : "text-gray-600 dark:text-gray-300 font-normal "
+                }`}
+              >
+                Experience
+              </a>
+            </Link>
           </div>
 
         <div className="space-x-4 flex flex-row items-center">
