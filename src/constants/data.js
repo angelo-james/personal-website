@@ -8,6 +8,11 @@ const userData = {
   address: 'San Francisco Bay Area',
   projects: [
     {
+      title: 'Personal Website',
+      link: 'https://www.ajarriola.com',
+      imgUrl: '/personal.png',
+    },
+    {
       title: 'Wedding Website',
       link: 'https://www.ginaandaj.com',
       imgUrl: '/ginaandaj-wedding-website.png',
