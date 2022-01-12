@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { useTheme } from "next-themes";
-import userData from "../../constants/data";
-import { useRouter } from "next/router";
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { useTheme } from 'next-themes'
+import userData from '../../constants/data'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const router = useRouter();
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+  }, [])
 
   return (
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
@@ -31,54 +31,56 @@ export default function Navbar() {
 
         <div className="space-x-8 hidden md:block">
           <Link href="/about">
-              <a
-                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
-                  router.asPath === "/about"
-                    ? "text-gray-600 font-bold dark:text-gray-400"
-                    : "text-gray-600 dark:text-gray-300 font-normal "
-                }`}
-              >
-                About
-              </a>
-            </Link>
-            <Link href="/projects">
-              <a
-                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
-                  router.asPath === "/projects"
-                    ? "text-gray-600 font-bold dark:text-gray-400"
-                    : "text-gray-600 dark:text-gray-300 font-normal "
-                }`}
-              >
-                Projects
-              </a>
-            </Link>
-            <Link href="/experience">
-              <a
-                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
-                  router.asPath === "/experience"
-                    ? "text-gray-600 font-bold dark:text-gray-400"
-                    : "text-gray-600 dark:text-gray-300 font-normal "
-                }`}
-              >
-                Experience
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a
-                className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
-                  router.asPath === "/contact"
-                    ? "text-gray-600 font-bold dark:text-gray-400"
-                    : "text-gray-600 dark:text-gray-300 font-normal "
-                }`}
-              >
-                Contact
-              </a>
-            </Link>
-          </div>
+            <a
+              className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                router.asPath === '/about'
+                  ? 'text-gray-600 font-bold dark:text-gray-400'
+                  : 'text-gray-600 dark:text-gray-300 font-normal '
+              }`}
+            >
+              About
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a
+              className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                router.asPath === '/projects'
+                  ? 'text-gray-600 font-bold dark:text-gray-400'
+                  : 'text-gray-600 dark:text-gray-300 font-normal '
+              }`}
+            >
+              Projects
+            </a>
+          </Link>
+          <Link href="/experience">
+            <a
+              className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                router.asPath === '/experience'
+                  ? 'text-gray-600 font-bold dark:text-gray-400'
+                  : 'text-gray-600 dark:text-gray-300 font-normal '
+              }`}
+            >
+              Experience
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a
+              className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+                router.asPath === '/contact'
+                  ? 'text-gray-600 font-bold dark:text-gray-400'
+                  : 'text-gray-600 dark:text-gray-300 font-normal '
+              }`}
+            >
+              Contact
+            </a>
+          </Link>
+        </div>
 
         <div className="space-x-4 flex flex-row items-center">
           <a
             href={userData.socialLinks.instagram}
+            target="_blank"
+            rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-yellow-500"
           >
             <svg
@@ -94,6 +96,8 @@ export default function Navbar() {
           </a>
           <a
             href={userData.socialLinks.github}
+            target="_blank"
+            rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-yellow-500"
           >
             <svg
@@ -109,6 +113,8 @@ export default function Navbar() {
           </a>
           <a
             href={userData.socialLinks.linkedin}
+            target="_blank"
+            rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-yellow-500"
           >
             <svg
@@ -126,11 +132,11 @@ export default function Navbar() {
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10 p-3 rounded focus:outline-none"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
             {mounted && (
               <>
-                {theme === "dark" ? (
+                {theme === 'dark' ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -167,5 +173,5 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
