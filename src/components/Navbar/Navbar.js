@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-      <div className="flex  md:flex-row justify-between items-center">
+      <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
             <a>
@@ -171,6 +171,52 @@ export default function Navbar() {
             )}
           </button>
         </div>
+      </div>
+      <div className="space-x-6 block md:hidden mt-4">
+        <Link href="/about">
+          <a
+            className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+              router.asPath === '/about'
+                ? 'text-gray-600 font-bold dark:text-gray-400'
+                : 'text-gray-600 dark:text-gray-300 font-normal '
+            }`}
+          >
+            About
+          </a>
+        </Link>
+        <Link href="/projects">
+          <a
+            className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+              router.asPath === '/projects'
+                ? 'text-gray-600 font-bold dark:text-gray-400'
+                : 'text-gray-600 dark:text-gray-300 font-normal '
+            }`}
+          >
+            Projects
+          </a>
+        </Link>
+        <Link href="/experience">
+          <a
+            className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+              router.asPath === '/experience'
+                ? 'text-gray-600 font-bold dark:text-gray-400'
+                : 'text-gray-600 dark:text-gray-300 font-normal '
+            }`}
+          >
+            Experience
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a
+            className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
+              router.asPath === '/contact'
+                ? 'text-gray-600 font-bold dark:text-gray-400'
+                : 'text-gray-600 dark:text-gray-300 font-normal '
+            }`}
+          >
+            Contact
+          </a>
+        </Link>
       </div>
     </div>
   )
