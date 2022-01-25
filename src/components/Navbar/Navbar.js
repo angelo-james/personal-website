@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
 
         <div className="space-x-8 hidden md:block">
-          <Link href="/about">
+          {/* <Link href="/about">
             <a
               className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
                 router.asPath === '/about'
@@ -40,7 +40,7 @@ export default function Navbar() {
             >
               About
             </a>
-          </Link>
+          </Link> */}
           <Link href="/projects">
             <a
               className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
