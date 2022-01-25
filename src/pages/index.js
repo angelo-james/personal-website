@@ -1,5 +1,6 @@
 import ContainerBlock from '../components/ContainerBlock/ContainerBlock'
 import userData from '../constants/data'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -28,14 +29,14 @@ export default function Home() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm always open for a chat shoot me an{' '}
+                {`I'm always open for a chat shoot me an`}{' '}
                 <a
                   href={`mailto:${userData.email}`}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   email
                 </a>{' '}
-                and I'll get back to you.
+                {`and I'll get back to you.`}
               </p>
             </div>
             <div className="mt-8">
@@ -52,7 +53,7 @@ export default function Home() {
                 >
                   CV
                 </a>{' '}
-                and I'd love to hear from you.
+                {`and I'd love to hear from you.`}
               </p>
             </div>
             {/* Social Links */}
@@ -92,59 +93,90 @@ export default function Home() {
               Technologies
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="javascript"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="express"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="postgres"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="html"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="css"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="nodejs"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="redux"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="git"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="react"
               />
-              <img
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="bootstrap"
               />
-              <img src={userData.tech.nextjs} className="h-20 w-20 mx-4 my-4" />
-              <img
+              <Image
+                src={userData.tech.nextjs}
+                className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="nextjs"
+              />
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                 className="h-20 w-20 mx-4 my-4"
+                width="120px"
+                height="120px"
+                alt="mongodb"
               />
-              {/* <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
-              /> */}
             </div>
           </div>
         </div>
