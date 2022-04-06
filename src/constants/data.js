@@ -29,8 +29,8 @@ const userData = {
     },
   ],
   aboutMeSection: [
-    `I've been developing full stack applications for 3 years now. Once an interest turned into hobby and is now a passion. I beleive that web development is defiently a form of art wether it be taking a clients idea or my own personal imagination and bringing it to life with just my fingers laptop and even on 3g network. `,
-    `There was a time when a code editor looked like something out of the Matrix which caught my interest and from there started off with my first Hello world HTML file back in 2018. `,
+    `A developer with a keyboard and a dream.`,
+    `Passion for developing products that are easy on the eye `,
   ],
   experience: [
     {
