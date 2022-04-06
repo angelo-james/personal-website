@@ -173,7 +173,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="space-x-6 block md:hidden mt-4">
-        <Link href="/about">
+        {/* <Link href="/about">
           <a
             className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
               router.asPath === '/about'
@@ -183,7 +183,7 @@ export default function Navbar() {
           >
             About
           </a>
-        </Link>
+        </Link> */}
         <Link href="/projects">
           <a
             className={`text-base hover:text-blue-500 dark:hover:text-yellow-500 hover:delay-150 ${
