@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useTheme } from 'next-themes'
-import userData from '../../constants/data'
-import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useTheme } from 'next-themes';
+import userData from '../../constants/data';
+import { useRouter } from 'next/router';
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-  const router = useRouter()
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   return (
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
@@ -132,7 +132,9 @@ export default function Navbar() {
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10 p-3 rounded focus:outline-none"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={() =>
+              setTheme(theme === 'dark' ? 'light' : 'dark')
+            }
           >
             {mounted && (
               <>
@@ -219,5 +221,5 @@ export default function Navbar() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

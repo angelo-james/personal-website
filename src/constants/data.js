@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: 'angelo-james',
   name: 'AJ Arriola',
-  designation: 'Full-Stack Developer',
+  designation: 'Software Engineer',
   avatarUrl: '',
   email: 'angelojames.arriola@gmail.com',
   phone: '',
@@ -34,9 +34,16 @@ const userData = {
   ],
   experience: [
     {
+      title: 'Software Engineer, Frontend',
+      company: 'Mission Cloud',
+      year: '2022 - 2024',
+      companyLink: '',
+      desc: '',
+    },
+    {
       title: 'Jr. Software Developer',
       company: 'Q CELLS',
-      year: '2019',
+      year: '2019 - 2022',
       companyLink: '',
       desc: '',
     },
@@ -57,6 +64,6 @@ const userData = {
   tech: {
     nextjs: '/nextjs.png',
   },
-}
+};
 
-export default userData
+export default userData;
